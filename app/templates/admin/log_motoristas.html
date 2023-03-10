@@ -1,0 +1,37 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <h2>motoristas</h2>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>CPF</th>
+            <th>Habilitação</th>
+            <th>Admin</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for motorista in motoristas %}
+        <tr>
+            <td>{{ motorista.usuario_motorista.nome }}</td>
+            <td>{{ motorista.usuario_motorista.telefone }}</td>
+            <td>{{ motorista.usuario_motorista.email }}</td>
+            <td>{{ motorista.usuario_motorista.cpf }}</td>
+            <td>{{ motorista.habilitacao }}</td>
+            <td>{{ motorista.usuario_motorista.is_admin }}</td>
+
+            <td class="col-md-1"><a href="{{ url_for('admin.editar_perfil_motorista', nome=motorista.usuario_motorista.nome) }}" class="btn btn-success">Editar</a></td>
+            <td class="col-md-1"><a href="{{ url_for('admin.excluir', id=motorista.usuario_motorista.id) }}" class="btn btn-danger">Excluir</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

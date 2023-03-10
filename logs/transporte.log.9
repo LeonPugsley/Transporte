@@ -1,0 +1,117 @@
+2022-11-09 20:13:16,343 ERROR: Exception on /admin/historico [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\admin\routes.py", line 376, in historico
+    return render_template('admin/historico.html', title='Historico', historico=historico, motoristas=motoristas,
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\base_admin.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -88, in block "doc"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 139, in block "html"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -35, in block "body"
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line -20, in block "content"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.models.Historico object' has no attribute 'datarota'
+2022-11-09 20:14:22,153 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 20:14:33,910 ERROR: Exception on /admin/historico [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\admin\routes.py", line 376, in historico
+    return render_template('admin/historico.html', title='Historico', historico=historico, motoristas=motoristas,
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\base_admin.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 111, in block "doc"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -46, in block "html"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 103, in block "body"
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line 141, in block "content"
+    {% endfor %}
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.models.Historico object' has no attribute 'historico'
+2022-11-09 20:15:06,622 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 20:15:16,723 ERROR: Exception on /admin/historico [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\admin\routes.py", line 376, in historico
+    return render_template('admin/historico.html', title='Historico', historico=historico, motoristas=motoristas,
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line 32, in template
+    data-toggle="table" style="border-collapse:collapse;">
+jinja2.exceptions.TemplateSyntaxError: expected name or number
+2022-11-09 20:17:47,316 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]

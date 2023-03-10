@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="faa4af34-905b-4ba1-b0ed-491b6f363add" name="Default Changelist" comment="v1.0 aceitavel pronto" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1dW1wtt20lDtqBsaiJtoTlbqSzM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/leonv/Documents/Transporte&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/leonv/Documents/Transporte/app/admin/routes.py&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leonv\Desktop\Transporte\app\templates\admin" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests in Transporte">
+    <configuration name="Python tests in Transporte" type="tests" factoryName="Autodetect" nameIsGenerated="true">
+      <module name="Transporte" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\leonv\Documents\Transporte\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Transporte" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in tests.py" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="4" Folder0="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master" Folder1="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master" Folder2="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master" Folder3="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master" CustomDictionaries="4" CustomDictionary0="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master\portuguese-brazil.dic" CustomDictionary1="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master\portuguese-brazil_technical-terms.dic" CustomDictionary2="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master\portuguese-brazil_technical-terms_without-accents.dic" CustomDictionary3="C:\Users\leonv\Documents\IntelliJ.Portuguese.Brazil.Dictionary-master\portuguese-brazil_without-accents.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faa4af34-905b-4ba1-b0ed-491b6f363add" name="Default Changelist" comment="" />
+      <created>1592526276965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592526276965</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Teste">
+      <created>1592869406413</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592869406413</updated>
+    </task>
+    <task id="LOCAL-00002" summary="v0.1">
+      <created>1593023698966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593023698966</updated>
+    </task>
+    <task id="LOCAL-00003" summary="v0.2">
+      <created>1593035543506</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593035543506</updated>
+    </task>
+    <task id="LOCAL-00004" summary="v0.3">
+      <created>1593045370684</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593045370684</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v0.3">
+      <created>1593047843619</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593047843619</updated>
+    </task>
+    <task id="LOCAL-00006" summary="v0.3">
+      <created>1593047883597</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593047883597</updated>
+    </task>
+    <task id="LOCAL-00007" summary="v0.4 check">
+      <created>1593077984088</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593077984088</updated>
+    </task>
+    <task id="LOCAL-00008" summary="v1.0">
+      <created>1593155498320</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1593155498320</updated>
+    </task>
+    <task id="LOCAL-00009" summary="v1.0 aceitavel">
+      <created>1593159569591</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593159569591</updated>
+    </task>
+    <task id="LOCAL-00010" summary="v1.0 aceitavel">
+      <created>1593197193911</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593197193911</updated>
+    </task>
+    <task id="LOCAL-00011" summary="v1.0 aceitavel admin">
+      <created>1593200273940</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593200273940</updated>
+    </task>
+    <task id="LOCAL-00012" summary="v1.0 aceitavel admin">
+      <created>1593200598004</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593200598004</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v1.0 aceitavel admin">
+      <created>1593201011340</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593201011340</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v1.0 aceitavel admin">
+      <created>1593201263339</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593201263339</updated>
+    </task>
+    <task id="LOCAL-00015" summary="v1.0 aceitavel admin">
+      <created>1593203491458</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593203491458</updated>
+    </task>
+    <task id="LOCAL-00016" summary="v1.0 aceitavel admin">
+      <created>1593203765450</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1593203765450</updated>
+    </task>
+    <task id="LOCAL-00017" summary="v1.0 aceitavel admin">
+      <created>1593204282435</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1593204282435</updated>
+    </task>
+    <task id="LOCAL-00018" summary="v1.0 aceitavel admin">
+      <created>1593204403281</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1593204403281</updated>
+    </task>
+    <task id="LOCAL-00019" summary="v1.0 aceitavel admin">
+      <created>1593204513182</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1593204513182</updated>
+    </task>
+    <task id="LOCAL-00020" summary="v1.0 aceitavel admin">
+      <created>1593209369869</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1593209369869</updated>
+    </task>
+    <task id="LOCAL-00021" summary="v1.0 aceitavel admin">
+      <created>1593210690006</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1593210690006</updated>
+    </task>
+    <task id="LOCAL-00022" summary="v1.0 aceitavel pronto">
+      <created>1593213020485</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1593213020485</updated>
+    </task>
+    <task id="LOCAL-00023" summary="v1.0 aceitavel pronto">
+      <created>1678477908968</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1678477908968</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Teste" />
+    <MESSAGE value="v0.1" />
+    <MESSAGE value="v0.2" />
+    <MESSAGE value="v0.3" />
+    <MESSAGE value="v0.4 check" />
+    <MESSAGE value="v1.0" />
+    <MESSAGE value="v1.0 aceitavel" />
+    <MESSAGE value="v1.0 aceitavel admin" />
+    <MESSAGE value="v1.0 aceitavel pronto" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.0 aceitavel pronto" />
+  </component>
+</project>

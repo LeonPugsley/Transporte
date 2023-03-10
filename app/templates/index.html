@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+<main class="inner cover" role="main">
+    <h1 class="cover-heading text-center">Você ira hoje?</h1>
+
+</main>
+<div class="text-center">
+    <div class="button">
+        <a class="btn btn-success btn-lg" href="{{ url_for('main.confirma') }}" role="button">Eu irei hoje</a>
+        <a class="btn btn-danger btn-lg" href="{{ url_for('main.obrigado')}}" role="button">Eu Não irei hoje</a>
+    </div>
+</div>
+<br><br>
+{% endblock %}
+

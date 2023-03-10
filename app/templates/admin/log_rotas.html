@@ -1,0 +1,25 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Rotas</h2>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nome da Rota</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for rota in rotas %}
+        <tr>
+            <td class="col-md-7">{{ rota.nome_rota }}</td>
+            <td class="col-md-1"><a class="btn btn-success"
+                   href="{{ url_for('admin.editar_rota', nome_rota=rota.nome_rota) }}">Editar</a></td>
+            <td class="col-md-1"><a class="btn btn-danger" href="{{ url_for('admin.excluir_rota', id=rota.id) }}">Excluir</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

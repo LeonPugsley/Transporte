@@ -1,0 +1,121 @@
+2022-11-09 21:01:18,529 ERROR: Exception on /admin/historico [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\admin\routes.py", line 376, in historico
+    return render_template('admin/historico.html', title='Historico', historico=historico, motoristas=motoristas,
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\base_admin.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -60, in block "doc"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -64, in block "html"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 102, in block "body"
+  File "C:\Users\leonv\Documents\Transporte\app\templates\admin\historico.html", line 19, in block "content"
+    </tr>
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\werkzeug\routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'admin.editar_motoristadia' with values ['motorista', 'rota']. Did you mean 'admin.editar_motorista_dia' instead?
+2022-11-09 21:04:10,889 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:15:22,636 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:25:29,150 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:25:43,037 ERROR: Exception on /confirma [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\main\routes.py", line 67, in confirma
+    print(len(rotadia.confirmados)+' '+veiculo.lugares)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2022-11-09 21:26:56,718 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:30:21,773 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:33:18,361 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:35:00,149 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:35:10,994 ERROR: Exception on /confirma [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\main\routes.py", line 70, in confirma
+    editar_veiculodia(rotadia.id, veiculo.id)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\admin\routes.py", line 269, in editar_veiculodia
+    rotadia.veiculo_id = Veiculo.query.filter_by(id=veiculo).first_or_404()
+AttributeError: 'int' object has no attribute 'veiculo_id'
+2022-11-09 21:37:08,276 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-09 21:37:09,977 ERROR: Exception on /confirma [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\main\routes.py", line 70, in confirma
+    editar_veiculodia(rotadia.id, veiculo.id)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\admin\routes.py", line 270, in editar_veiculodia
+    rotadia.veiculo_id = Veiculo.query.filter_by(id=veiculo).first_or_404()
+AttributeError: 'NoneType' object has no attribute 'veiculo_id'
+2022-11-09 21:44:03,154 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]

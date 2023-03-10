@@ -1,0 +1,44 @@
+{% extends "admin/base_admin.html" %}
+
+{% block content %}
+<div class="container-fluid">
+    <h2>Alunos</h2>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>CPF</th>
+            <th>Curso</th>
+            <th>Instituto</th>
+            <th>Periodo</th>
+            <th>Categoria</th>
+            <th>Rota</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for aluno in alunos %}
+        <tr>
+            <td>{{ aluno.usuario_aluno.nome }}</td>
+            <td>{{ aluno.usuario_aluno.telefone }}</td>
+            <td>{{ aluno.usuario_aluno.email }}</td>
+            <td>{{ aluno.usuario_aluno.cpf }}</td>
+            <td>{{ aluno.curso }}</td>
+            <td>{{ aluno.instituto }}</td>
+            <td>{{ aluno.periodo }}</td>
+            <td>{{ aluno.categoria }}</td>
+            <td>{{ aluno.rota.nome_rota }}</td>
+            <td><a href="{{ url_for('admin.mandar_mensagem', destinatario=aluno.usuario_aluno.nome)}}" class="btn btn-warning">Mandar Mensagem</a></td>
+            <td><a href="{{ url_for('admin.editar_perfil_aluno', nome=aluno.usuario_aluno.nome) }}" class="btn btn-success">Editar</a></td>
+            <td><a href="{{ url_for('admin.excluir', id=aluno.usuario_aluno.id) }}" class="btn btn-danger">Excluir</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

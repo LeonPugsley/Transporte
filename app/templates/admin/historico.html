@@ -1,0 +1,139 @@
+{% extends 'admin/base_admin.html' %}
+
+{% block body_attribs %}
+class="p-3 mb-2 bg-dark text-white"
+{% endblock %}
+
+{% block content %}
+
+<div class="text-center">
+    <h1>Histórico</h1>
+</div>
+<div class="container-fluid table-responsive">
+    <table class="table table-condensed" data-pagination="true" data-search="true" data-show-pagination-switch="true"
+           data-toggle="table" style="border-collapse:collapse;">
+        <thead>
+        <tr>
+            <th>Data</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for data in historico %}
+        <tr class="accordion-toggle" data-target="#collapsed{{ data.data }}" data-toggle="collapse">
+            <td>{{ data.data.isoformat() }}</td>
+        </tr>
+        <tr>
+            <td class="hiddenRow text-dark" colspan="12">
+                <div class="accordion-body collapse container-fluid " id="collapsed{{ data.data }}">
+                    {% for data2 in data.datas | sort(attribute='id') %}
+                        {% for rota in data2.rotasdia %}
+                        <table class="table table-condensed" data-pagination="true" data-search="true"
+                               data-show-pagination-switch="true"
+                               data-toggle="table" style="border-collapse:collapse;">
+                            <thead>
+                            <tr>
+                                <th>Rota</th>
+                                <th>Motorista</th>
+                                <th>Veículo</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-md-4">{{ rota.nomerotadia.nome_rota }}</td>
+                                <td class="col-md-4">
+                                    <div class="btn-group">
+                                        <button aria-expanded="false" aria-haspopup="true"
+                                                class="btn btn-info dropdown-toggle"
+                                                data-toggle="dropdown" type="button">
+                                            {{ rota.motoristadia.usuario_motorista.nome }}<span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            {% for motorista in motoristas %}
+                                            <li>
+                                                <a href="{{ url_for('admin.editar_motoristadia',motorista=motorista.id, rota=rota.id) }}">{{
+                                                    motorista.usuario_motorista.nome }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="col-md-4">
+                                    <div class="btn-group">
+                                        <button aria-expanded="false" aria-haspopup="true"
+                                                class="btn btn-info dropdown-toggle"
+                                                data-toggle="dropdown" type="button">
+                                            {{ rota.veiculodia.placa }}<span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            {% for veiculo in veiculos %}
+                                            <li>
+                                                <a href="{{ url_for('admin.editar_veiculodia', veiculo=veiculo.id, rota=rota.id) }}">{{
+                                                    veiculo.placa }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td class="col-md-1"><a class="btn btn-success"
+                                                        href="{{ url_for('admin.historico', data=data) }}">Finalizar
+                                    rota</a></td>
+                            </tr>
+                            <tr class="accordion-toggle" data-target="#collapsed{{ rota.id }}" data-toggle="collapse">
+                                <th>Alunos Confirmados  ({{ rota.confirmados|count }})</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td class="hiddenRow text-dark" colspan="12">
+                                    <div class="accordion-body collapse container-fluid " id="collapsed{{ rota.id }}">
+                                        <table class="table table-condensed" data-pagination="true" data-search="true"
+                                               data-show-pagination-switch="true"
+                                               data-toggle="table" style="border-collapse:collapse;">
+                                            <thead>
+                                            <tr>
+                                                <th>Nome</th>
+                                                <th>Telefone</th>
+                                                <th>Email</th>
+                                                <th>CPF</th>
+                                                <th>Curso</th>
+                                                <th>Instituto</th>
+                                                <th>Periodo</th>
+                                                <th>Categoria</th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for aluno in rota.confirmados %}
+                                            <tr>
+                                                <td>{{ aluno.usuario_aluno.nome }}</td>
+                                                <td>{{ aluno.usuario_aluno.telefone }}</td>
+                                                <td>{{ aluno.usuario_aluno.email }}</td>
+                                                <td>{{ aluno.usuario_aluno.cpf }}</td>
+                                                <td>{{ aluno.curso }}</td>
+                                                <td>{{ aluno.instituto }}</td>
+                                                <td>{{ aluno.periodo }}</td>
+                                                <td>{{ aluno.categoria }}</td>
+                                                <td>
+                                                    <a class="btn btn-warning"
+                                                       href="{{ url_for('admin.mandar_mensagem', destinatario=aluno.usuario_aluno.nome)}}">Mandar
+                                                        Mensagem</a></td>
+                                            </tr>
+                                            {% endfor%}
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

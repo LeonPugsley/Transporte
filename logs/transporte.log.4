@@ -1,0 +1,108 @@
+2022-11-14 11:01:45,540 ERROR: Exception on /index [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\main\routes.py", line 28, in index
+    if usuario.aluno.respondido:
+AttributeError: 'InstrumentedList' object has no attribute 'respondido'
+2022-11-14 11:02:41,288 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:03:00,568 ERROR: Exception on /index [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\main\routes.py", line 29, in index
+    return render_template('respondido.html', usuario=usuario, form=form, title='Voce ira Hoje?')
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\leonv\Documents\Transporte\app\templates\respondido.html", line 86, in template
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got 'usuario'
+2022-11-14 11:11:26,878 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:11:41,257 ERROR: Exception on /index [GET] [in C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\leonv\Documents\Transporte\app\main\routes.py", line 29, in index
+    return render_template('respondido.html', usuario=usuario, form=form, title='Voce ira Hoje?')
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\leonv\Documents\Transporte\app\templates\respondido.html", line -74, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\app\templates\base.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -1, in top-level template code
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -68, in block "doc"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -84, in block "html"
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line -88, in block "body"
+  File "C:\Users\leonv\Documents\Transporte\app\templates\base.html", line 81, in block "content"
+  File "C:\Users\leonv\Documents\Transporte\app\templates\respondido.html", line 8, in block "app_content"
+    </main>
+  File "C:\Users\leonv\Documents\Transporte\venv\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'function object' has no attribute 'aluno'
+2022-11-14 11:13:08,631 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:15:16,093 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:17:15,186 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:18:42,398 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:41:34,415 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:42:04,107 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:43:33,271 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:51:08,346 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:51:42,534 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:52:14,172 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]
+2022-11-14 11:55:10,300 INFO: Transporte inicialização [in C:\Users\leonv\Documents\Transporte\app\__init__.py:84]

@@ -1,0 +1,43 @@
+{% extends "admin/base_admin.html" %}
+
+{% block app_content %}
+<h1>Mensagens</h1>
+{% for mensagem in mensagens %}
+<table class="table">
+    <tr>
+        <td width="70px">
+            <a class="text-danger" href="{{ url_for('admin.usuario', nome=mensagem.remetente.nome) }}">
+                <img src="{{ mensagem.remetente.avatar(70) }}"/>
+            </a>
+        </td>
+        <td>
+                <span class="user_popup">
+                    <a class="text-danger" href="{{ url_for('admin.usuario', nome=mensagem.remetente.nome) }}">
+                        {{ mensagem.remetente.nome }}
+                    </a>
+                </span>
+            said {{ moment(mensagem.timestamp).fromNow() }}
+            <br>
+            <span id="mensagem{{ mensagem.id }}">{{ mensagem.corpo }}</span>
+            <div class="text-right">
+                <a class="btn btn-success" href="{{ url_for('admin.mandar_mensagem', destinatario=mensagem.remetente.nome) }}">Responder</a>
+            </div>
+        </td>
+    </tr>
+</table>
+{% endfor %}
+<nav aria-label="...">
+    <ul class="pager">
+        <li class="previous{% if not prev_url %} disabled{% endif %}">
+            <a href="{{ prev_url or '#' }}">
+                <span aria-hidden="true">&larr;</span> Newer messages
+            </a>
+        </li>
+        <li class="next{% if not next_url %} disabled{% endif %}">
+            <a href="{{ next_url or '#' }}">
+                Older messages<span aria-hidden="true">&rarr;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+{% endblock %}
